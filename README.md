@@ -1,4 +1,4 @@
-# Age and Gender Prediction System
+# Age and Gender Detection System
 ###  This is a Project Done in Code Clause Internship in December 2022
 #### 1. This project is created using tools:
 - VS Code
@@ -10,9 +10,9 @@
 - streamllit
 - numpy
 #### 4. This is the GUI created using Streamlit:
-##### In this web application you have to add your picture for Prediction it will show you the accuracy of the prediction too
-![image](https://user-images.githubusercontent.com/97289683/209460183-312240ca-5670-407d-bd31-82bc68980d9a.png)
-![image](https://user-images.githubusercontent.com/97289683/209460491-b6365a1b-1054-494d-bd80-f4334c1e631e.png)
+##### In this web application you have to add your picture for Detection it will show you the accuracy of the Detection too
+![image](https://user-images.githubusercontent.com/97289683/209463216-261bb097-8605-4e4e-97d8-7cb002fd771d.png)
+![image](https://user-images.githubusercontent.com/97289683/209463560-1a76703c-730a-497b-a10a-33e7601c0b80.png)
 
 
 
