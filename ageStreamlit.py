@@ -1,10 +1,4 @@
-# SOURCES:
-# https://learnopencv.com/age-gender-classification-using-opencv-deep-learning-c-python/, model loading and usage code taken from there
-# https://discuss.streamlit.io/t/remove-made-with-streamlit-from-bottom-of-app/1370/2,
-# Hiding the hamburger menu and watermark
-
 import time
-
 import cv2
 import numpy as np
 import streamlit as st
@@ -100,13 +94,13 @@ if uploaded_file is not None:
         gender_pred_list = gender_net.forward()
         gender = gender_classes[gender_pred_list[0].argmax()]
         genderPercent =gender_pred_list[0].max() * 100
-        st.write("Gender: ", gender, "   Confidence: ", "{:.2f}".format(genderPercent),"%")
+        st.write("Gender: ", gender, "      Confidence: ", "{:.2f}".format(genderPercent),"%")
 
         age_net.setInput(blob)
         age_pred_list = age_net.forward()
         age = age_classes[age_pred_list[0].argmax()]
         agePercent = age_pred_list[0].max() * 100
-        st.write("Age: ", age, "   Confidence: ","{:.2f}".format(agePercent),"%")
+        st.write("Age: ", age, "      Confidence: ","{:.2f}".format(agePercent),"%")
 
         label = "{},{}".format(gender, age)
         cv2.putText(
