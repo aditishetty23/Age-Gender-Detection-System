@@ -38,7 +38,7 @@ def get_face_box(net, frame, conf_threshold=0.7):
 
 
 st.write("""
-    # Age & Gender Prediction System
+    # Age & Gender Detection System
     """)
 st.write("""
     ### CodeClause Internship Project 
@@ -48,7 +48,7 @@ st.write("""
     """)
 st.write("## Upload a Picture to check Age and Gender")
 
-uploaded_file = st.file_uploader("Choose a file for prediction: ")
+uploaded_file = st.file_uploader("Choose a file for Detection: ")
 if uploaded_file is not None:
     image = Image.open(uploaded_file)
     cap = np.array(image)
